@@ -592,6 +592,11 @@ ol {
 	padding-top: 24px;
 }
 
+.center-btn {
+	text-align: center;
+	padding-top: 24px;
+    width: 70%;
+}
 .categories-slider.owl-carousel .owl-item.active .cs-item .cs-text h4 {
 	opacity: 1;
 }
@@ -842,11 +847,12 @@ ol {
 
 .footer-section {
 	background: #000606;
-	padding-top: 40px;
+	padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .fs-about {
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 }
 
 .fs-about .fa-logo {
@@ -870,7 +876,7 @@ ol {
 }
 
 .fs-widget {
-	margin-bottom: 30px;
+	/* margin-bottom: px; */
 	overflow: hidden;
 }
 
@@ -2916,4 +2922,20 @@ ol {
 		font-size: 36px;
 		line-height: normal;
 	}
+    .fw-social a {
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .fw-social a i {
+        margin-right: 8px;
+    }
+
+    .fw-social a:hover {
+        color: #007bff;
+    }
+
+
 }

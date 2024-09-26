@@ -12,6 +12,8 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="{{ asset('front/css/bootstrap.min.css') }}">
@@ -56,12 +58,16 @@
                                 <ul class="dropdown">
                                     <li><a href="{{ route('gallery') }}">Gallery</a></li>
                                     <li><a href="{{ route('portfolio-details') }}">Portfolio Details</a></li>
-                                     <li><a href="{{ route('project-details/1') }}">Project Details</a></li>
+                                    <li><a href="{{ route('project-details/1') }}">Project Details</a></li>
                                 </ul>
                             </li> --}}
+
                         </ul>
+                        {{-- <button class="button-53" role="button">Button 53</button> --}}
+
 
                     </nav>
+                    <div class="right-btn"><a href="#" class="primary-btn">Book NOW</a></div>
 
                     <div id="mobile-menu-wrap"></div>
                 </div>
@@ -89,7 +95,64 @@
         </div>
     </div> --}}
     <!-- Search model end -->
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="fs-about">
+                        <div class="fs-widget">
+                            <h5>About the photographer</h5>
+                        </div>
+                        <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
 
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>My Accounts</h5>
+                        <div class="fw-social">
+
+                            <a href="https://www.facebook.com/ahmadafareed" target="_blank"><i
+                                    class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="https://www.behance.net/yourprofile" target="_blank"><i class="fab fa-behance"></i>
+                                Behance</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>Quick links</h5>
+                        <ul>
+                            <li><a href="{{ route('home') }}">Home</a></li>
+                            <li><a href="{{ route('about') }}">About</a></li>
+                            <li><a href="{{ route('contact') }}">Contact</a></li>
+                            {{-- <li><a href="#">Contact</a></li> --}}
+                        </ul>
+                        <ul>
+                            <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                            <li><a href="{{ route('project') }}">Project</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-8 col-sm-8">
+                    <div class="fs-widget">
+                        <h5>Book an Appointemnt</h5>
+                        {{-- <p>Imolor amet consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p> --}}
+                            {{-- <form action="#"> --}}
+                       <div class="center-btn "><a href="#" class="primary-btn">BOOK NOW</a></div>
+                       {{-- <button class="btn btn-primary" type="button">Button</button> --}}
+
+
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
     <!-- Js Plugins -->
     <script src="{{ asset('front') }}/js/jquery-3.3.1.min.js"></script>
     <script src="{{ asset('front') }}/js/bootstrap.min.js"></script>

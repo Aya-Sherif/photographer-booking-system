@@ -59,7 +59,7 @@ class ContactController extends Controller
         $contact->name = $request->input('name');
         $contact->email = $request->input('email');
         $contact->phone_number = $request->input('phone_number');
-        $contact->date = $request->input('date');
+        // $contact->date = $request->input('date');
         $contact->comments = $request->input('comments');
         $contact->save();
        $this->AddGooogelevent($contact);

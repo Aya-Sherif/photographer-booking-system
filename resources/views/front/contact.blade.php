@@ -66,7 +66,7 @@
                             <input type="text" name="name" placeholder="Name" required>
                             <input type="email" name="email" placeholder="Email" required>
                             <input type="text" name="phone_number" placeholder="Phone Number" required>
-                            <input type="date" id="datepicker" name="date" placeholder="Select a date" required>
+                            {{-- <input type="date" id="datepicker" name="date" placeholder="Select a date" required> --}}
                             <textarea name="comments" placeholder="Message" required></textarea>
                             <button type="submit" class="site-btn">Submit</button>
                         </form>
@@ -79,7 +79,7 @@
     </section>
     <!-- Contact Section End -->
 
-    <script>
+    {{-- <script>
         document.addEventListener('DOMContentLoaded', function () {
             flatpickr('#datepicker', {
                 disable: [
@@ -91,6 +91,6 @@
                 dateFormat: 'Y-m-d',
             });
         });
-    </script>
+    </script> --}}
 
 @endsection

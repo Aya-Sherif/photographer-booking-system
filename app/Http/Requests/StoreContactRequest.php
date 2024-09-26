@@ -26,7 +26,7 @@ class StoreContactRequest extends FormRequest
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'phone_number' => 'required|string|max:255',
-            'date' => 'required|date',
+            // 'date' => 'required|date',
             'comments' => 'required|string',
         ];
     }

@@ -74,7 +74,7 @@ Route::group(['namespace' => 'Front'], function () {
     Route::get('/project-details/{id}', [ProjectDetailsController::class, 'index'])->name('project-details');
     Route::get('/contact', [ContactController::class, 'index'])->name('contact');
     Route::post('/contact', [ContactController::class, 'store'])->name('contacts.store');
-});
+}); 
 
 
 require __DIR__.'/auth.php';
