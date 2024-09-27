@@ -24,17 +24,8 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="contact-text">
                         <h3>Get in touch</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
-                        <div class="ct-item">
-                            <div class="ct-icon">
-                                <i class="fa fa-map-marker"></i>
-                            </div>
-                            <div class="ct-text">
-                                <h5>Address</h5>
-                                <p>333 Middle Winchendon Rd, Rindge, NH 03461</p>
-                            </div>
-                        </div>
+                        <p>If you have any questions, feel free to reach out via WhatsApp or email. We're here to help you!</p>
+
                         <div class="ct-item">
                             <div class="ct-icon">
                                 <i class="fa fa-mobile"></i>
@@ -42,8 +33,8 @@
                             <div class="ct-text">
                                 <h5>Phone</h5>
                                 <ul>
-                                    <li>125-711-811</li>
-                                    <li>125-668-886</li>
+                                    <li>+201280021316</li>
+
                                 </ul>
                             </div>
                         </div>
@@ -53,7 +44,7 @@
                             </div>
                             <div class="ct-text">
                                 <h5>Email</h5>
-                                <p>Support.photography@ gmail.com</p>
+                                <p>ahmedashraf200255@yahoo.com</p>
                             </div>
                         </div>
                     </div>

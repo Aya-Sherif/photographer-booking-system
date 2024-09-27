@@ -105,8 +105,8 @@
                         <div class="fs-widget">
                             <h5>About the photographer</h5>
                         </div>
-                        <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua.</p>
+                        <p>Ahmed Fareed (b.2002) is an award-winning travel photographer from Giza, Egypt.
+                            He has been awarded 1st place at the international youth photocontest (NoFrames), and other contests including international and local contests. </p>
 
                     </div>
                 </div>
@@ -116,8 +116,11 @@
                         <div class="fw-social">
                             <div class="fa-social">
                                 <a href="https://www.facebook.com/ahmadafareed"><i class="fa fa-facebook " style="font-size: 2rem; margin-right: 1rem;"></i></a>
-                                <a href="#"><i class="fa fa-phone" style="font-size: 2rem; margin-right: 1rem;"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play" style="font-size: 2rem; margin-right: 1rem;"></i></a>
+                                <a><i class="fa fa-gmail" style="font-size: 2rem; margin-right: 1rem;"> </i></a>
+                                <a href="https://wa.me/+201280021316" target="_blank">
+                                    <i class="fa fa-whatsapp" style="font-size: 2rem; margin-right: 1rem;"></i>
+                                </a>
+                                                                <a><i class="fa fa-gmail" style="font-size: 2rem; margin-right: 1rem;"> </i></a>
                                 <a href="https://www.instagram.com/fareedph?igsh=MXQ2aG5oaTRpeDZlcQ=="><i class="fa fa-instagram" style="font-size: 2rem; margin-right: 1rem;"></i></a>
                             </div>
                         </div>
