@@ -44,7 +44,7 @@ class ProjectController extends Controller
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
                 $imageName =  '_' . uniqid() . '.' . $image->getClientOriginalExtension();
-                $image->move(public_path('front/img/project'), $imageName);
+                $image->move(public_path('front/img/project/'), $imageName);
                 $photo = new Photos();
                 $photo->image = $imageName;
                 $photo->project_id = $project->id;

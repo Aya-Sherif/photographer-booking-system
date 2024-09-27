@@ -53,7 +53,7 @@ class AdminPortfolioController extends Controller
             if ($request['image']) {
                 $image = $request->file('image');
                 $imageName = '_' . uniqid() . '.' . $image->getClientOriginalExtension();
-                $image->move('front\img\portfolio' . "\"", $imageName);
+                $image->move('front/img/portfolio/', $imageName);
             }
 
             $portfolio['image'] = $imageName;

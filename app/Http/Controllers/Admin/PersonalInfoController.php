@@ -46,7 +46,7 @@ class PersonalInfoController extends Controller
         if ($request['photo_path']) {
             $image = $request->file('photo_path');
             $imageName = '_' . uniqid() . '.' . $image->getClientOriginalExtension();
-            $image->move('front\img\about' . "\"", $imageName);
+            $image->move('front/img/about/', $imageName);
         }
         $personalinfo['photo_path'] = $imageName;
         // dd($portfolio);
