@@ -5,7 +5,7 @@
         <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">About /</span> Add New Publiation</h4>
             <!-- Content -->
-            <form action="{{ route('publiations.store') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('publications.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
                 <!-- File input -->

@@ -19,37 +19,37 @@ class ContactController extends Controller
     }
 
 
-    function AddGooogelevent($data)
-    {
-        // Parse start and end date times
-        $startDateTime = Carbon::parse($data['date']);
-        $endDateTime = $startDateTime->copy()->addHour(); // Example: end time one hour later
-        // Create a new event instance
-        $event = new Event;
+    // function AddGooogelevent($data)
+    // {
+    //     // Parse start and end date times
+    //     $startDateTime = Carbon::parse($data['date']);
+    //     $endDateTime = $startDateTime->copy()->addHour(); // Example: end time one hour later
+    //     // Create a new event instance
+    //     $event = new Event;
 
-        // Set event properties
-        $event->name = $data['name'];
-        $event->description = $data['comments'];
-        $event->startDateTime = $startDateTime;
-        $event->endDateTime = $endDateTime;
+    //     // Set event properties
+    //     $event->name = $data['name'];
+    //     $event->description = $data['comments'];
+    //     $event->startDateTime = $startDateTime;
+    //     $event->endDateTime = $endDateTime;
 
-        // Add attendee
-        $event->addAttendee([
-            'email' => $data['email'],
-            'name' => $data['name'],
-            'responseStatus' => 'needsAction',
-        ]);
+    //     // Add attendee
+    //     $event->addAttendee([
+    //         'email' => $data['email'],
+    //         'name' => $data['name'],
+    //         'responseStatus' => 'needsAction',
+    //     ]);
 
-        // Save the event
-        try {
-            $event->save();
-            return true; // Event saved successfully
-        } catch (\Exception $e) {
-            // Handle any exceptions (optional)
-            dd($e);
-            return false; // Event failed to save
-        }
-    }
+    //     // Save the event
+    //     try {
+    //         $event->save();
+    //         return true; // Event saved successfully
+    //     } catch (\Exception $e) {
+    //         // Handle any exceptions (optional)
+    //         dd($e);
+    //         return false; // Event failed to save
+    //     }
+    // }
     public function store(StoreContactRequest $request)
     {
         // dd($request);
@@ -59,10 +59,11 @@ class ContactController extends Controller
         $contact->name = $request->input('name');
         $contact->email = $request->input('email');
         $contact->phone_number = $request->input('phone_number');
-        // $contact->date = $request->input('date');
+        // $contact->date = date()->no;
         $contact->comments = $request->input('comments');
+        // dd($contact);
         $contact->save();
-       $this->AddGooogelevent($contact);
+    //    $this->AddGooogelevent($contact);
 
          return redirect()->back()->with('success', 'Contact saved and event created in Google Calendar!');
     }

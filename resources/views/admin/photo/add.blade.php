@@ -25,7 +25,7 @@
                             <select class="form-select" name="category_id" id="exampleFormControlSelect1"
                                 aria-label="Default select example">
                                 @foreach ($categories as $category)
-                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                    {{-- <option value="{{ $category->id }}">{{ $category->name }}</option> --}}
                                     <option value="{{ $category->id }}"
                                         @if (old('category_id')== $category->id) selected @endif>
                                         {{ $category->name }}

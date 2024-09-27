@@ -4,31 +4,33 @@
     <hr class="my-5" />
 
     <!-- Bootstrap Table with Header - Light -->
-    <div class="col-3 pb-3">
-        <a href="{{ route('categories.create') }}" class="btn btn-primary float-left " tabindex="-1" role="button" >Add Category</a>
-    </div>
-
     <div class="card">
-        <h5 class="card-header">Categories Table </h5>
+        <h5 class="card-header">ِMessages</h5>
         <div class="table-responsive text-nowrap">
-
             <table class="table">
                 @include('admin.layouts.message')
 
                 <thead class="table-light">
                     <tr>
-                        <th>Category name</th>
-                        <th>Number Of photos</th>
+                        <th>Client Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Message</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody class="table-border-bottom-0">
-                    @foreach ($categories as $category)
+                    @foreach ($messages as $item)
                         <tr>
-                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{ $category->name }}</strong>
+                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{ $item->name }}</strong>
                             </td>
-                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{ $category->photos->count() }}</strong>
-
+                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{ $item->email }}</strong>
+                            </td>
+                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{ $item->phone_number }}</strong>
+                            </td>
+                            <td>
+                                <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                                <strong>{{ \Illuminate\Support\Str::words($item->comments, 10, '...') }}</strong>
                             </td>
 
                             {{-- <td><span class="badge bg-label-primary me-1">Active</span></td> --}}
@@ -39,17 +41,12 @@
                                         <i class="bx bx-dots-vertical-rounded"></i>
                                     </button>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="javascript:void(0);" onclick="confirmDelete({{ $category->id }})">
-                                            <i class="bx bx-trash me-1"></i> Delete
-                                        </a>
-                                        <a class="dropdown-item" href="{{route('categories.edit', $category->id)}}">
-                                            <i class="bx bx-edit-alt me-1"></i> Edit
+
+                                        <a class="dropdown-item" href="{{route('contacts.show', $item->id)}}">
+                                            <i class=" me-1"></i> display
                                         </a>
 
-                                        <form id="delete-form-{{ $category->id }}" action="{{ route('categories.destroy', $category->id) }}" method="POST" style="display: none;">
-                                            @csrf
-                                            @method('DELETE')
-                                        </form>
+
                                     </div>
 
                                 </div>
@@ -64,7 +61,7 @@
         </div>
     </div>
     <script>
-        function confirmDelete(categoryId) {
+        function confirmDelete(photoId) {
             Swal.fire({
                 title: "Are you sure?",
                 text: "You won't be able to revert this!",
@@ -75,10 +72,10 @@
                 confirmButtonText: "Yes, delete it!"
             }).then((result) => {
                 if (result.isConfirmed) {
-                    document.getElementById('delete-form-' + categoryId).submit();
+                    document.getElementById('delete-form-' + photoId).submit();
                     Swal.fire({
                         title: "Deleted!",
-                        text: "Category has been deleted.",
+                        text: "Award has been deleted.",
                         icon: "success"
                     });
                 }

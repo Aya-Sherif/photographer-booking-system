@@ -16,7 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('name');
             $table->string('email');
-            $table->dateTime('date');
+            // $table->dateTime('date');
             $table->string('phone_number');
             $table->text('comments'); // Adding comments column
 

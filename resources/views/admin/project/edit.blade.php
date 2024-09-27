@@ -31,6 +31,7 @@
 
                             @endforeach
                         </div>
+                        <a href="{{ route('photo.edit', $project->id) }}" class="btn btn-danger float-left " tabindex="-1" role="button" >Delete Photo</a>
                             <div class="mb-3">
                                 <label for="images" class="form-label"><strong> Add More Photos </strong></label>
                                 <input class="form-control" type="file" name="images[]" id="images" multiple />

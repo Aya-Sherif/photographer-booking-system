@@ -2,7 +2,9 @@
 @section('content')
     <!-- Content wrapper -->
     <hr class="my-5" />
-
+    <div class="col-3 pb-3">
+        <a href="{{ route('clients.create') }}" class="btn btn-primary float-left " tabindex="-1" role="button" > Add New Client</a>
+    </div>
     <!-- Bootstrap Table with Header - Light -->
     <div class="card">
         <h5 class="card-header">Clients Table </h5>

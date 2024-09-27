@@ -4,6 +4,9 @@
     <hr class="my-5" />
 
     <!-- Bootstrap Table with Header - Light -->
+    <div class="col-3 pb-3">
+        <a href="{{ route('photos.create') }}" class="btn btn-primary float-left " tabindex="-1" role="button" >Add New Photo</a>
+    </div>
     <div class="card">
         <h5 class="card-header">Photos Table </h5>
         <div class="table-responsive text-nowrap">

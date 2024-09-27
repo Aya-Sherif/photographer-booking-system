@@ -13,6 +13,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Admin\AwardController;
 use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\HonoringGalleryController;
+use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\Admin\PhotoController;
 use App\Http\Controllers\Admin\ProjectController as AdminProjectController;
 use App\Http\Controllers\Admin\PublicationController;
@@ -55,6 +56,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('clients', ClientController::class);
     Route::resource('publications', PublicationController::class);
     Route::resource('awards', AwardController::class);
+    Route::resource('contacts', MessageController::class);
     Route::resource('honoringGallery', HonoringGalleryController::class);
     Route::delete('photo/{photo}', [PhotoController::class, 'destroyPhoto'])->name('photo.destroy');
     Route::get('photo/{photo}', [PhotoController::class, 'edit'])->name('photo.edit');
@@ -74,7 +76,7 @@ Route::group(['namespace' => 'Front'], function () {
     Route::get('/project-details/{id}', [ProjectDetailsController::class, 'index'])->name('project-details');
     Route::get('/contact', [ContactController::class, 'index'])->name('contact');
     Route::post('/contact', [ContactController::class, 'store'])->name('contacts.store');
-}); 
+});
 
 
 require __DIR__.'/auth.php';

@@ -4,6 +4,9 @@
     <hr class="my-5" />
 
     <!-- Bootstrap Table with Header - Light -->
+    <div class="col-3 pb-3">
+        <a href="{{ route('projects.create') }}" class="btn btn-primary float-left " tabindex="-1" role="button" >Add New Project</a>
+    </div>
     <div class="card">
         <h5 class="card-header">Projects Table </h5>
         <div class="table-responsive text-nowrap">
@@ -46,9 +49,9 @@
                                         <a class="dropdown-item" href="{{ route('projects.edit', $project->id) }}">
                                             <i class="bx bx-edit-alt me-1"></i> Edit
                                         </a>
-                                        <a class="dropdown-item" href="{{ route('photo.edit', $project->id) }}">
+                                        {{-- <a class="dropdown-item" href="{{ route('photo.edit', $project->id) }}">
                                             <i class="bx bx-edit-alt me-1"></i> Delete pohoto
-                                        </a>
+                                        </a> --}}
 
                                         <form id="delete-form-{{ $project->id }}" action="{{ route('projects.destroy', $project->id) }}" method="POST" style="display: none;">
                                             @csrf

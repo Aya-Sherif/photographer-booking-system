@@ -115,148 +115,60 @@
           <ul class="menu-inner py-1">
 
             <li class="menu-item">
-              <a  href="{{ route('categories.index') }}" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-detail"></i>
-                <div data-i18n="Form Layouts">Categories</div>
-              </a>
-              <ul class="menu-sub">
-                  <li class="menu-item">
-                    <a href="{{ route('categories.index') }}" class="menu-link">
-                      <div data-i18n="Horizontal Form">All Categories</div>
-                    </a>
-                  </li>
-                <li class="menu-item">
-                  <a href="{{ route('categories.create') }}" class="menu-link">
-                    <div data-i18n="Vertical Form">Add Category</div>
-                  </a>
-                </li>
-              </ul>
+                <a  href="{{ route('categories.index') }}" class="menu-link">
+                  <div data-i18n="Vertical Form">Categories</div>
+                </a>
             </li>
             <li class="menu-item">
-              <a  href="{{ route('projects.index') }}" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-detail"></i>
-                <div data-i18n="Form Layouts">projects</div>
-              </a>
-              <ul class="menu-sub">
-                  <li class="menu-item">
-                    <a href="{{ route('projects.index') }}" class="menu-link">
-                      <div data-i18n="Horizontal Form">All projects</div>
-                    </a>
-                  </li>
-                <li class="menu-item">
-                  <a href="{{ route('projects.create') }}" class="menu-link">
-                    <div data-i18n="Vertical Form">Add project</div>
-                  </a>
-                </li>
-              </ul>
+                <a  href="{{ route('projects.index') }}" class="menu-link">
+                  <div data-i18n="Vertical Form">Project</div>
+                </a>
             </li>
             <li class="menu-item">
-              <a  href="{{ route('photos.index') }}" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-detail"></i>
-                <div data-i18n="Form Layouts">Portfolio</div>
-              </a>
-              <ul class="menu-sub">
-                  <li class="menu-item">
-                      <a href="{{ route('photos.index') }}" class="menu-link">
-                          <div data-i18n="Horizontal Form">All photos</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                    <a href="{{ route('photos.create') }}" class="menu-link">
-                      <div data-i18n="Vertical Form">Add Photo</div>
-                    </a>
-                  </li>
-              </ul>
+                <a  href="{{ route('photos.index') }}" class="menu-link">
+                  <div data-i18n="Vertical Form">Portfolio</div>
+                </a>
             </li>
-            <!-- Tables -->
-            {{-- <li class="menu-item active">
-              <a href="{{route('photos.index')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-table"></i>
-                <div data-i18n="Tables">portfolio</div>
-              </a>
-            </li> --}}
+            <li class="menu-item">
+                <a  href="{{ route('contacts.index') }}" class="menu-link">
+                  <div data-i18n="Vertical Form">Messages</div>
+                </a>
+            </li>
+
             <!-- Misc -->
 
             <li class="menu-header small text-uppercase"><span class="menu-header-text">About</span></li>
             <li class="menu-item">
-                <a href="{{route('personalinfo.index')}}" class="menu-link">
+                <a href="{{ route('personalinfo.index') }}" class="menu-link">
                   <div data-i18n="Vertical Form">Personal Info</div>
                 </a>
             </li>
 
-              <li class="menu-item">
-                  <a  href="{{ route('publications.index') }}" class="menu-link menu-toggle">
-                  <i class="menu-icon tf-icons bx bx-detail"></i>
-                  <div data-i18n="Form Layouts">Publications</div>
+            <li class="menu-item">
+            <a href="{{ route('publications.index') }}" class="menu-link">
+                  <div data-i18n="Vertical Form">Publications</div>
                 </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('publications.index') }}" class="menu-link">
-                            <div data-i18n="Horizontal Form">All Publications</div>
-                          </a>
-                      </li>
-                      <li class="menu-item">
-                      <a href="{{ route('publications.create') }}" class="menu-link">
-                        <div data-i18n="Vertical Form">Add Publiation</div>
-                    </a>
-                    </li>
-                </ul>
-              </li>
-
-              <li class="menu-item">
-                  <a  href="{{ route('clients.index') }}" class="menu-link menu-toggle">
-                  <i class="menu-icon tf-icons bx bx-detail"></i>
-                  <div data-i18n="Form Layouts">Clients</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('clients.index') }}" class="menu-link">
-                            <div data-i18n="Horizontal Form">All Clients</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="{{ route('clients.create') }}" class="menu-link">
-                        <div data-i18n="Vertical Form">Add Client</div>
-                    </a>
-                </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a  href="{{ route('awards.index') }}" class="menu-link menu-toggle">
-                  <i class="menu-icon tf-icons bx bx-detail"></i>
-                  <div data-i18n="Form Layouts">Awards</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('awards.index') }}" class="menu-link">
-                            <div data-i18n="Horizontal Form">All Awards</div>
-                          </a>
-                      </li>
-                      <li class="menu-item">
-                      <a href="{{ route('awards.create') }}" class="menu-link">
-                        <div data-i18n="Vertical Form">Add Award</div>
-                      </a>
-                    </li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a  href="{{ route('honoringGallery.index') }}" class="menu-link menu-toggle">
-                  <i class="menu-icon tf-icons bx bx-detail"></i>
-                  <div data-i18n="Form Layouts">Honoring Gallery</div>
-                </a>
-                <ul class="menu-sub">
-                    <li class="menu-item">
-                        <a href="{{ route('honoringGallery.index') }}" class="menu-link">
-                            <div data-i18n="Horizontal Form">Honoring Gallery</div>
-                          </a>
-                      </li>
-                      <li class="menu-item">
-                          <a href="{{ route('honoringGallery.create') }}" class="menu-link">
-                        <div data-i18n="Vertical Form">Add Honor</div>
-                      </a>
-                    </li>
-                </ul>
             </li>
+            <li class="menu-item">
+                <a href="{{ route('clients.index') }}" class="menu-link">
+                  <div data-i18n="Vertical Form">Clients</div>
+                </a>
+            </li>
+
+            <li class="menu-item">
+                <a href="{{ route('awards.index') }}" class="menu-link">
+                  <div data-i18n="Vertical Form">Awards</div>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="{{ route('honoringGallery.index') }}" class="menu-link">
+                  <div data-i18n="Vertical Form">Honoring Gallery</div>
+                </a>
+            </li>
+
+
+
+
             <li class="menu-header small text-uppercase"><span class="menu-header-text">ACcount Settings</span></li>
                 <x-dropdown-link :href="route('profile.edit')">
                     {{ __('Profile') }}

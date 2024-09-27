@@ -42,7 +42,7 @@
                 <div class="col-lg-12">
                     <div class="logo">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('front/img/logo.png') }}" alt="" style="height: 70px">
+                            <img src="{{ asset('front/logo/logo.png') }}" alt="" style="height: 70px">
                         </a>
                     </div>
                     <nav class="nav-menu mobile-menu">
@@ -67,7 +67,7 @@
 
 
                     </nav>
-                    <div class="right-btn"><a href="#" class="primary-btn">Book NOW</a></div>
+                    <div class="right-btn"><a href="https://calendly.com/s-aya-nassef/new-meeting" class="primary-btn">Book NOW</a></div>
 
                     <div id="mobile-menu-wrap"></div>
                 </div>
@@ -142,7 +142,7 @@
                         <h5>Book an Appointemnt</h5>
                         {{-- <p>Imolor amet consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p> --}}
                             {{-- <form action="#"> --}}
-                       <div class="center-btn "><a href="#" class="primary-btn">BOOK NOW</a></div>
+                       <div class="center-btn "><a href="https://calendly.com/s-aya-nassef/new-meeting" class="primary-btn">BOOK NOW</a></div>
                        {{-- <button class="btn btn-primary" type="button">Button</button> --}}
 
 
