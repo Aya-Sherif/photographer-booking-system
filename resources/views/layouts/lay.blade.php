@@ -67,7 +67,8 @@
 
 
                     </nav>
-                    <div class="right-btn"><a href="https://calendly.com/s-aya-nassef/new-meeting" class="primary-btn">Book NOW</a></div>
+                    <div class="right-btn"><a href="https://appt.link/meet-with-ahmed-fareed-Ym3lA87Y"
+                            class="primary-btn">Book NOW</a></div>
 
                     <div id="mobile-menu-wrap"></div>
                 </div>
@@ -113,11 +114,12 @@
                     <div class="fs-widget">
                         <h5>My Accounts</h5>
                         <div class="fw-social">
-
-                            <a href="https://www.facebook.com/ahmadafareed" target="_blank"><i
-                                    class="fab fa-facebook-f"></i> Facebook</a>
-                            <a href="https://www.behance.net/yourprofile" target="_blank"><i class="fab fa-behance"></i>
-                                Behance</a>
+                            <div class="fa-social">
+                                <a href="https://www.facebook.com/ahmadafareed"><i class="fa fa-facebook " style="font-size: 2rem; margin-right: 1rem;"></i></a>
+                                <a href="#"><i class="fa fa-phone" style="font-size: 2rem; margin-right: 1rem;"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play" style="font-size: 2rem; margin-right: 1rem;"></i></a>
+                                <a href="https://www.instagram.com/fareedph?igsh=MXQ2aG5oaTRpeDZlcQ=="><i class="fa fa-instagram" style="font-size: 2rem; margin-right: 1rem;"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -141,14 +143,15 @@
                     <div class="fs-widget">
                         <h5>Book an Appointemnt</h5>
                         {{-- <p>Imolor amet consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p> --}}
-                            {{-- <form action="#"> --}}
-                       <div class="center-btn "><a href="https://calendly.com/s-aya-nassef/new-meeting" class="primary-btn">BOOK NOW</a></div>
-                       {{-- <button class="btn btn-primary" type="button">Button</button> --}}
+                        {{-- <form action="#"> --}}
+                        <div class="center-btn "><a href="https://appt.link/meet-with-ahmed-fareed-Ym3lA87Y"
+                                class="primary-btn">BOOK NOW</a></div>
+                        {{-- <button class="btn btn-primary" type="button">Button</button> --}}
 
 
 
-                        </div>
                     </div>
+                </div>
             </div>
         </div>
     </footer>

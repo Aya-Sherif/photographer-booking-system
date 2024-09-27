@@ -865,14 +865,14 @@ ol {
 }
 
 .fs-about .fa-social a {
-	display: inline-block;
-	font-size: 18px;
+	/* display: inline-block; */
+	font-size: 50px;
 	color: #ffffff;
-	margin-right: 20px;
+	margin-right: 50px;
 }
 
 .fs-about .fa-social a:last-child {
-	margin-right: 0;
+	margin-right: 50;
 }
 
 .fs-widget {
@@ -2930,12 +2930,14 @@ ol {
     }
 
     .fw-social a i {
-        margin-right: 8px;
+        margin-right: 90px;
     }
 
     .fw-social a:hover {
         color: #007bff;
     }
-
+.icon-large{
+    font-size: 50px;
+}
 
 }
