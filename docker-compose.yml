@@ -8,6 +8,8 @@ services:
       - .env
     ports:
       - "8000:80"
+      - "8004:443"
+
     volumes:
       - .:/var/www/html
       - /var/www/html/vendor
