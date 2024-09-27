@@ -34,13 +34,13 @@
                 </div>
                 <div class="col-lg-12">
                     @foreach ($project->photos as $item)
-
-                    <div class="bd-pics centered-image">
-                        <img src="{{ asset('front/img/project/'.$item->image) }}" alt="">
-                    </div>
+                        <div class="bd-pics centered-image">
+                            <img src="{{ asset('front/img/project/'.$item->image) }}" alt="" class="img-fluid" style="max-height: 600px;    max-width: 100%;">
+                        </div>
                     @endforeach
-
                 </div>
+
+
             </div>
         </div>
     </section>
