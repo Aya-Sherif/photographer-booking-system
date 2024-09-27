@@ -67,10 +67,14 @@
 
 
                     </nav>
-                    <div class="right-btn"><a href="https://appt.link/meet-with-ahmed-fareed-Ym3lA87Y"
-                            class="primary-btn">Book NOW</a></div>
 
-                    <div id="mobile-menu-wrap"></div>
+
+                    <div id="mobile-menu-wrap">
+                        <div class="right-btn "><a href="https://appt.link/meet-with-ahmed-fareed-Ym3lA87Y"
+                            class="primary-btn">Book NOW</a>
+
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
