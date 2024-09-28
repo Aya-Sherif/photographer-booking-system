@@ -33,7 +33,7 @@
                             <div class="ct-text">
                                 <h5>Phone</h5>
                                 <ul>
-                                    <li>+20 1280021316</li>
+                                    <li>+201280021316</li>
 
                                 </ul>
                             </div>
@@ -59,7 +59,7 @@
                             <input type="text" name="phone_number" placeholder="Phone Number" required>
                             {{-- <input type="date" id="datepicker" name="date" placeholder="Select a date" required> --}}
                             <textarea name="comments" placeholder="Message" required></textarea>
-                            <button type="submit" class="site-btn">Submit!</button>
+                            <button type="submit" class="site-btn">Submit</button>
                         </form>
 
 
