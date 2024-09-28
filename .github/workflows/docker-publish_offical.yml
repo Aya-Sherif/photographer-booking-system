@@ -25,4 +25,4 @@ jobs:
           push: true
           tags: |
             ${{ vars.DOCKERHUB_USERNAME }}/photoapp:latest
-            ${{ vars.DOCKERHUB_USERNAME }}/photoapp:${{ github.sha::8 }}
+            ${{ vars.DOCKERHUB_USERNAME }}/photoapp:${{ github.sha }}
