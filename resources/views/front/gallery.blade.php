@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 p-0">
                     <div class="gallery-filter">
