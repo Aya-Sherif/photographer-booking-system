@@ -57,6 +57,7 @@ RUN npm run build
 # Set correct permissions for storage and cache directories
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/public
 RUN chmod -R 755 /var/www/html/storage
+RUN mkdir /var/www/html/public/front/img && chmod -R 777 /var/www/html/public/front/img
 
 # Expose ports 80 (HTTP) and 443 (HTTPS)
 EXPOSE 80 443
