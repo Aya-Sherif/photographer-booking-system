@@ -23,7 +23,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="contact-text">
-                        <h3>Get in touch!</h3>
+                        <h3>Get in touch now!</h3>
                         <p>If you have any questions, feel free to reach out via WhatsApp or Email. We're here to help you!</p>
 
                         <div class="ct-item">
