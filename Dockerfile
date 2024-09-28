@@ -1,5 +1,8 @@
 # Use PHP with Apache as the base image
 FROM php:8.2-apache as web
+
+ARG CACHEBUST=1
+RUN echo "Cache bust: ${CACHEBUST}"
  
 # Install Additional System Dependencies
 RUN apt-get update && apt-get install -y \

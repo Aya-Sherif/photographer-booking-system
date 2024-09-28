@@ -23,8 +23,8 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="contact-text">
-                        <h3>Get in touch</h3>
-                        <p>If you have any questions, feel free to reach out via WhatsApp or email. We're here to help you!</p>
+                        <h3>Get in touch!</h3>
+                        <p>If you have any questions, feel free to reach out via WhatsApp or Email. We're here to help you!</p>
 
                         <div class="ct-item">
                             <div class="ct-icon">
@@ -33,7 +33,7 @@
                             <div class="ct-text">
                                 <h5>Phone</h5>
                                 <ul>
-                                    <li>+201280021316</li>
+                                    <li>+20 1280021316</li>
 
                                 </ul>
                             </div>
