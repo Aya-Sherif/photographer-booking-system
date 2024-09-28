@@ -50,8 +50,8 @@ class PersonalInfoController extends Controller
         }
         $personalinfo['photo_path'] = $imageName;
         // dd($portfolio);
-                    PersonalInformation::create($personalinfo);
-                    return redirect()->route("personalinfo.index")->with('success', "Photo Added Successfully");
+        PersonalInformation::create($personalinfo);
+        return redirect()->route("personalinfo.index")->with('success', "Photo Added Successfully");
     }
 
     /**
@@ -68,10 +68,8 @@ class PersonalInfoController extends Controller
     public function edit(string $id)
     {
         //
-        $personalinfo=PersonalInformation::findOrFail($id);
+        $personalinfo = PersonalInformation::findOrFail($id);
         return  view('admin.personalInfo.edit', compact('personalinfo'));
-
-
     }
 
     /**
@@ -80,25 +78,26 @@ class PersonalInfoController extends Controller
     public function update(Request $request, string $id)
     {
         //
-        $Personalinfo=PersonalInformation::findOrFail($id);
+        $Personalinfo = PersonalInformation::findOrFail($id);
 
         $newPersonalinfo = $request->validate([
             'headline' => 'required|string|min:3',
-            'body'=>'required|string|min:3'
+            'body' => 'required|string|min:3'
         ]);
 
         if ($request->hasFile('photo_path')) {
-                $imageName =   '_' . uniqid() . '.' . $$request->file('photo_path')->getClientOriginalExtension();
-                $request->file('photo_path')->move(public_path('front/img/project'), $imageName);
-                $newPersonalinfo['photo_path'] = $imageName;
-        }
-        else    {
+            $image = $request->file('photo_path');
+            $imageName = '_' . uniqid() . '.' . $image->getClientOriginalExtension();
+            $image->move('front/img/about/', $imageName);
 
-            $newPersonalinfo['photo_path']=$Personalinfo['photo_path'];
+            $newPersonalinfo['photo_path'] = $imageName;
+        } else {
+
+            $newPersonalinfo['photo_path'] = $Personalinfo['photo_path'];
         }
 
-         $Personalinfo->update($newPersonalinfo);
-        return redirect()->route("personalinfo.index")->with('success',"Info Updated Successfuly");
+        $Personalinfo->update($newPersonalinfo);
+        return redirect()->route("personalinfo.index")->with('success', "Info Updated Successfuly");
     }
 
     /**
