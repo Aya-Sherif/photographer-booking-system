@@ -26,6 +26,10 @@
         var bg = $(this).data('setbg');
         $(this).css('background-image', 'url(' + bg + ')');
     });
+    $('.set-bg-pic').each(function () {
+        var bg = $(this).data('setbg');
+        $(this).css('background-image', 'url(' + bg + ')');
+    });
 
     // Search model
     $('.search-switch').on('click', function () {
@@ -51,7 +55,7 @@
     });
 
     $(".portfolio-filter, .gallery-filter").isotope({
-        itemSelector: '.pf-item, .gf-item',
+        itemSelector: '.pf-item, .gf-item ',
         percentPosition: true,
         masonry: {
         // use element for option

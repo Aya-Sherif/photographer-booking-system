@@ -11,9 +11,10 @@ services:
       - "8004:443"
 
     volumes:
-      - .:/var/www/html
-      - /var/www/html/vendor
-      - /var/www/html/storage
+      # - ./:/var/www/html
+      - images:/var/www/html/public/front/img
+      - vendor:/var/www/html/vendor
+      - storage:/var/www/html/storage
     depends_on:
       - db
 
@@ -43,3 +44,7 @@ services:
 
 volumes:
   db_data: {}  # Defining a named volume for MySQL data storage
+  # app: {}
+  images: {}
+  vendor: {}
+  storage: {}

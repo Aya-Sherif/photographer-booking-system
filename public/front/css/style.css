@@ -135,6 +135,12 @@ ol {
 	background-size: cover;
 	background-position: top center;
 }
+.set-bg-pic {
+    background-repeat: no-repeat;
+    background-size: contain; /* Changed from cover to contain */
+    background-position: center; /* Adjusted position for centering */
+
+}
 
 .spad {
 	padding-top: 20px;
@@ -735,6 +741,7 @@ ol {
 	justify-content: center;
 	overflow: hidden;
 }
+
 
 .portfolio-filter .pf-item:after {
 	position: absolute;
