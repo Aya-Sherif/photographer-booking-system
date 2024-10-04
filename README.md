@@ -10,10 +10,11 @@ This project is a photography booking system designed to showcase the work of a 
 
 - **Slideshow Gallery**: A dynamic slideshow displays all photos related to each project, enhancing the visual experience.
 
-- ![Slideshow Gallery Screenshot](D:\Projects\Fareda\Fareeda\ReedMePhotos\Screenshot%202024-10-04%20141525.png)
+-![Screenshot](ReadMePhotos\Screenshot%202024-10-04%20141525.png)
 
 - **Admin Authorization**: Secure admin panel for managing portfolio items and client bookings.
   ![Admin Authorization Screenshot](D:\Projects\Fareda\Fareeda\ReedMePhotos\Screenshot%202024-10-04%20141821.png)
+  
   
   ![Admin Authorization Screenshot](D:\Projects\Fareda\Fareeda\ReedMePhotos\Screenshot%202024-10-04%20142006.png)
 
