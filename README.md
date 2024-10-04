@@ -13,15 +13,15 @@ This project is a photography booking system designed to showcase the work of a 
 
 
 - **Admin Authorization**: Secure admin panel for managing portfolio items and client bookings.
-  ![Admin Authorization Screenshot](D:\Projects\Fareda\Fareeda\ReedMePhotos\Screenshot%202024-10-04%20141821.png)
+  ![Admin Authorization Screenshot](https://github.com/Aya-Sherif/photographer-booking-system/blob/a480a9f24b3d2933ae3c730469b7d2de87c22f95/ReadMePhotos/Screenshot%202024-10-04%20142006.png)
   
   
-  ![Admin Authorization Screenshot](D:\Projects\Fareda\Fareeda\ReedMePhotos\Screenshot%202024-10-04%20142006.png)
+  ![Admin Authorization Screenshot](https://github.com/Aya-Sherif/photographer-booking-system/blob/a480a9f24b3d2933ae3c730469b7d2de87c22f95/ReadMePhotos/Screenshot%202024-10-04%20141821.png)
 
 - **Category Matching**: Organizes portfolio items by matching them with categories using foreign IDs, making navigation intuitive.
-  ![Category Matching Screenshot](D:\Projects\Fareda\Fareeda\ReedMePhotos\Screenshot%202024-10-04%20144326.png)
+  ![Category Matching Screenshot](https://github.com/Aya-Sherif/photographer-booking-system/blob/a480a9f24b3d2933ae3c730469b7d2de87c22f95/ReadMePhotos/Screenshot%202024-10-04%20144326.png)
 
-- ![Category Matching Screenshot](D:\Projects\Fareda\Fareeda\ReedMePhotos\Screenshot%202024-10-04%20144519.png)
+- ![Category Matching Screenshot](https://github.com/Aya-Sherif/photographer-booking-system/blob/a480a9f24b3d2933ae3c730469b7d2de87c22f95/ReadMePhotos/Screenshot%202024-10-04%20144519.png)
 
 ## Technologies Used
 
@@ -68,11 +68,10 @@ To run the application using Docker, ensure that Docker is installed on your mac
 
 Here are some screenshots of the application:
 
-!![Screenshot](ReedMePhotos\Ahmed-Fareed-10-04-2024_02_50_PM.png)
+![Home Page](https://github.com/Aya-Sherif/photographer-booking-system/blob/a480a9f24b3d2933ae3c730469b7d2de87c22f95/ReadMePhotos/Ahmed-Fareed-10-04-2024_02_50_PM.png)
+![Projects](https://github.com/Aya-Sherif/photographer-booking-system/blob/a480a9f24b3d2933ae3c730469b7d2de87c22f95/ReadMePhotos/Screenshot%202024-10-04%20145544.png)
+![Contact US](https://github.com/Aya-Sherif/photographer-booking-system/blob/a480a9f24b3d2933ae3c730469b7d2de87c22f95/ReadMePhotos/Screenshot%202024-10-04%20145544.png)
 
-![Screenshot 3](D:\Projects\Fareda\Fareeda\ReedMePhotos\Ahmed-Fareed-10-04-2024_02_54_PM.png)
-
-![Screenshot 3](D:\Projects\Fareda\Fareeda\ReedMePhotos\Screenshot%202024-10-04%20145544.png)
 
 ## Contributing
 
