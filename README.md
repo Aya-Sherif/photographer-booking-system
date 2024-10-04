@@ -68,7 +68,7 @@ To run the application using Docker, ensure that Docker is installed on your mac
 
 Here are some screenshots of the application:
 
-![Screenshot 1](D:\Projects\Fareda\Fareeda\ReedMePhotos\Ahmed-Fareed-10-04-2024_02_50_PM.png)
+!![Screenshot](ReedMePhotos\Ahmed-Fareed-10-04-2024_02_50_PM.png)
 
 ![Screenshot 3](D:\Projects\Fareda\Fareeda\ReedMePhotos\Ahmed-Fareed-10-04-2024_02_54_PM.png)
 
