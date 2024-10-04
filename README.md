@@ -69,7 +69,7 @@ To run the application using Docker, ensure that Docker is installed on your mac
 Here are some screenshots of the application:
 
 ![Home Page](https://github.com/Aya-Sherif/photographer-booking-system/blob/a480a9f24b3d2933ae3c730469b7d2de87c22f95/ReadMePhotos/Ahmed-Fareed-10-04-2024_02_50_PM.png)
-![Projects](https://github.com/Aya-Sherif/photographer-booking-system/blob/a480a9f24b3d2933ae3c730469b7d2de87c22f95/ReadMePhotos/Screenshot%202024-10-04%20145544.png)
+![Projects](https://github.com/Aya-Sherif/photographer-booking-system/blob/17fe7c81c159eb8e114c4c4dc2eb4af73cedb831/ReadMePhotos/Ahmed-Fareed-10-04-2024_02_54_PM.png)
 ![Contact US](https://github.com/Aya-Sherif/photographer-booking-system/blob/a480a9f24b3d2933ae3c730469b7d2de87c22f95/ReadMePhotos/Screenshot%202024-10-04%20145544.png)
 
 
