@@ -9,7 +9,7 @@ This project is a photography booking system designed to showcase the work of a 
 - **Responsive Design**: Fully responsive layout that works seamlessly across desktops, tablets, and smartphones.
 
 - **Slideshow Gallery**: A dynamic slideshow displays all photos related to each project, enhancing the visual experience.
-![Uploading Screenshot 2024-10-04 141525.png…]()
+![Slide Show](https://github.com/Aya-Sherif/photographer-booking-system/blob/995f9df1ea1589b755ed1a2c4503670ec45a5624/ReadMePhotos/Screenshot%202024-10-04%20141525.png)
 
 
 - **Admin Authorization**: Secure admin panel for managing portfolio items and client bookings.
