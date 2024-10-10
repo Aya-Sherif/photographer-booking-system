@@ -13,10 +13,13 @@ class HomeController extends Controller
     public function index()
     {
         // $homes = Home::all();
-        $projects=Project::all();
-$categories=Category::all();
-$portfolioItems = Portfolio::with('category')->get();
+        $projects = Project::all();
+        $categories = Category::all();
+        $portfolioItems = Portfolio::with('category')
+            ->orderBy('created_at', 'desc') // Order by the created_at column
+            ->take(10) // Limit to 10 items
+            ->get();
 
-        return view('front.index',compact('projects','categories','portfolioItems'));
+        return view('front.index', compact('projects', 'categories', 'portfolioItems'));
     }
 }

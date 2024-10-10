@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('image'); // URL or path to the photo
             $table->unsignedBigInteger('category_id')->nullable();
-            $table->enum('style', ['large-width large-height','large-height','large-width','natural']); // Enum for styles
+            $table->integer('style'); // Enum for styles
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
 

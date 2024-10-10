@@ -6,11 +6,9 @@ This project is a photography booking system designed to showcase the work of a 
 
 ## Features
 
-- **Responsive Design**: Fully responsive layout that works seamlessly across desktops, tablets, and smartphones.
+- 
 
-- **Slideshow Gallery**: A dynamic slideshow displays all photos related to each project, enhancing the visual experience.
-
-- ![Slideshow Gallery Screenshot](D:\Projects\Fareda\Fareeda\ReedMePhotos\Screenshot%202024-10-04%20141525.png)
+- ![Slideshow Gallery Screenshot](![Screenshot](ReadMePhotos\Screenshot%202024-10-04%20141525.png))
 
 - **Admin Authorization**: Secure admin panel for managing portfolio items and client bookings.
   ![Admin Authorization Screenshot](D:\Projects\Fareda\Fareeda\ReedMePhotos\Screenshot%202024-10-04%20141821.png)
@@ -25,7 +23,7 @@ This project is a photography booking system designed to showcase the work of a 
 ## Technologies Used
 
 - **Laravel**: The backend framework powering the web application.
-- **Bootstrap 3**: Front-end framework used for responsive design.
+- **Bootstrap **: Front-end framework used for responsive design.
 - **SweetAlert2**: Provides enhanced alert handling and user feedback.
 - **JavaScript**: Used for dynamic functionalities such as the slideshow.
 

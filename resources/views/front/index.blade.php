@@ -58,13 +58,13 @@
             <div class="col-lg-12 p-4">
                 <div class="portfolio-filter">
                     @foreach ($portfolioItems as $item)
-                    <div class="pf-item {{$item->style}} set-bg
+                    <div class="pf-item large-width set-bg
                         @if ($item->category_id != null)
                             category-{{ $item->category_id }}
                         @else
                             uncategorized
                         @endif"
-                        data-setbg="{{ asset('front/img/portfolio/') }}/{{ $item->image }}">
+                        data-setbg="{{ asset('front/img/portfolio/') }}/{{ $item->image }}" style="height: {{$item->style}}px">
                         <a href="{{ asset('front/img/portfolio/') }}/{{ $item->image }}" class="pf-icon image-popup"><span class="icon_plus"></span></a>
                         <div class="pf-text">
                                 <h4>   {{ $item->name }}</h4>
@@ -74,12 +74,14 @@
                         </div>
                     </div>
                     @endforeach
-                  
+
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="load-more-btn">
+        <a href="{{ route('portfolio') }}">Load More</a>
+    </div>
 </section>
 
 

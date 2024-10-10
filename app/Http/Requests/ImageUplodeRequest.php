@@ -24,7 +24,7 @@ class ImageUplodeRequest extends FormRequest
         return [
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
             'name' => 'required|min:3',
-            'style' => 'required|in:large-width large-height,large-height,large-width,natural', // Validate style against enum values
+            'style' => 'required', // Validate style against enum values
         ];
     }
 }

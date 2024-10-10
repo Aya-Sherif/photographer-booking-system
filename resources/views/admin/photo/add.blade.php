@@ -36,13 +36,8 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlSelect1" class="form-label" >Photo Style</label>
-                            <select class="form-select" name="style" id="exampleFormControlSelect1"
-                                aria-label="Default select example">
-                                 <option value="large-width">Large Width</option>
-                                <option value="large-width large-height">Large Width Large Height</option>
-                                <option value="large-height">Large Height</option>
-                                <option value="natural">Natural</option>
-                            </select>
+                            <input type="number" class="form-control" name="style" id="style" step="0.1" />
+
                         </div>
 
                         <div class="mb-3">
