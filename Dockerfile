@@ -38,6 +38,7 @@ COPY ./000-default-ssl.conf /etc/apache2/sites-available/000-default-ssl.conf
 RUN a2ensite 000-default-ssl.conf
 
 # Copy the application code
+RUN rm -rf /var/www/html/*
 COPY . /var/www/html
 
 # Set the working directory
