@@ -36,7 +36,7 @@
 
                         <div class="mb-3">
                             <label for="exampleFormControlSelect1" class="form-label" >Photo Style</label>
-                            <input type="number" class="form-control" name="style" id="style" step="0.1" />
+                            <input type="number" class="form-control" name="style" id="style" step="0.1" value="{{ $photo->style }}"/>
 
                         </div>
 
