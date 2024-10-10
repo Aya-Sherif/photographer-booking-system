@@ -1,5 +1,25 @@
+
 @extends('layouts.lay')
 @section('content')
+<style>
+    .portfolio-filter {
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+  }
+
+  .pf-item.large-width {
+	width: 32%; /* Three items in one row */
+	margin-bottom: 10px;
+    margin-left: -1px;
+  }
+
+  .pf-item.large-width img {
+	width: 100%;   /* Make the image take the full width of its container */
+	height: auto;  /* Maintain the aspect ratio */
+	object-fit: contain; /* Ensure the entire image is visible without cropping */
+  }
+</style>
     <!-- Breadcrumb Begin -->
     <div class="breadcrumb-option spad">
         <div class="container">

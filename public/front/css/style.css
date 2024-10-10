@@ -819,23 +819,7 @@ ol {
 	transition: all 0.6s;
 }
 
-.portfolio-filter {
-	display: flex;
-	flex-wrap: wrap;
-	/* justify-content: space-between; */
-  }
 
-  .pf-item.large-width {
-	width: 32%; /* Three items in one row */
-	margin-bottom: 10px;
-    margin-left: -1px;
-  }
-
-  .pf-item.large-width img {
-	width: 100%;   /* Make the image take the full width of its container */
-	height: auto;  /* Maintain the aspect ratio */
-	object-fit: contain; /* Ensure the entire image is visible without cropping */
-  }
 .portfolio-filter .pf-item.large-height {
 	height: 740px;
 }
@@ -850,17 +834,7 @@ ol {
 	background: #009603;
 }
 
-.load-more-btn a {
-	font-size: 15px;
-	color: #ffffff;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	display: inline-block;
-	padding: 15px 70px 13px;
-	background: #eb8912;
-	font-family: "Quantico", sans-serif;
-}
+
 
 /*---------------------
   Footer
