@@ -8,7 +8,7 @@
   }
 
   .pf-item.large-width {
-	width: 32%; /* Three items in one row */
+	width: 30%; /* Three items in one row */
 	margin-bottom: 10px;
     margin-left: -1px;
   }
