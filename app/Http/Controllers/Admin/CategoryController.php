@@ -36,7 +36,7 @@ class CategoryController extends Controller
     {
         $category['name'] = $request['name'];
         Category::create($category);
-        return redirect()->route('categories.index')->withe('success', 'Category Adedd Successfully');
+        return redirect()->route('categories.index')->with('success', 'Category Adedd Successfully');
     }
 
     /**
@@ -65,7 +65,7 @@ class CategoryController extends Controller
         $category = Category::findOrFail($id);
         $newcategory['name'] = $request['name'];
         $category->update($newcategory);
-        return redirect()->route('categories.index')->withe('success', 'Category Edited Successfully');
+        return redirect()->route('categories.index')->with('success', 'Category Edited Successfully');
     }
 
     /**
@@ -74,5 +74,8 @@ class CategoryController extends Controller
     public function destroy(string $id)
     {
         //
+        Category::findOrFail($id)->delete();
+        return back();
     }
+
 }

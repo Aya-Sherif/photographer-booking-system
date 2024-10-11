@@ -14,7 +14,7 @@ class HomeController extends Controller
     {
         // $homes = Home::all();
         $projects = Project::all();
-        $categories = Category::all();
+        $categories = Category::whereHas('photos')->get();
         $portfolioItems = Portfolio::with('category')
             ->orderBy('created_at', 'desc') // Order by the created_at column
             ->take(21) // Limit to 10 items

@@ -13,7 +13,8 @@ class PortfolioController extends Controller
     public function index()
     {
         // Fetch all categories
-        $categories = Category::all();
+        $categories = Category::whereHas('photos')->get();
+        
 
         // Fetch all portfolio items, with their related category data
         $portfolioItems = Portfolio::with('category')->get();
